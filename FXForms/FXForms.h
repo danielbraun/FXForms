@@ -95,6 +95,8 @@ UIKIT_EXTERN NSString *const FXFormFieldTypeImage; //image
 - (NSArray *)extraFields;
 - (NSArray *)excludedFields;
 
+- (NSString*)toolbarCloseButtonTitle;
+
 // informal protocol:
 
 // - (NSDictionary *)<fieldKey>Field
@@ -206,6 +208,8 @@ UIKIT_EXTERN NSString *const FXFormFieldTypeImage; //image
 
 
 @interface FXFormDefaultCell : FXFormBaseCell
+
+@property (nonatomic, readonly) UIToolbar *toolbar;
 
 @end
 
